@@ -96,6 +96,9 @@ The next steps will require using a text editing program to create your configur
 10) Set the Open Graph "description" value for the "open_graph_description" config property. The Open Graph protocol provides a way for links placed in social media sites to display thumbnail images, descriptions and titles. The "description" is what will always appear as the description (such as "Our Repository") for every link to interviews hosted by your OHMS Viewer.
 
 11) Set the Open Graph image to use for links placed in social media sites ("open_graph_image" config property). This will be the image seen with links placed in social media site postings (it does not appear on the Viewer page). The image must reside in the root directory of your web site. An example is that if the image is "ourimage.jpg" in the "images" subdirectory of your site, you would enter: images/ourimage.jpg .
+
+12) If you are using the Kaltura service, you must enter a value for the "kaltura_url" property. This will be the domain for the server that you see in the links (the "tiny" and embedded) created by the Kaltura system for clips. An example is that if the URL begins with http://kaltura.mysite.org, then your setting would be:
+	kaltura_url = http://kaltura.mysite.org
   
 Please note that the "title" that appears for links in social media sites using Open Graph is set by the "title" data field in the linked interview cache file.
  
