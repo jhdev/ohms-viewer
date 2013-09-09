@@ -13,7 +13,7 @@ echo "<style>
 $filepath = $cacheFile->media_url;
 echo '<div class="centered">';
 if($cacheFile->fmt=='audio' || $cacheFile->fmt=='audiotrans') {
-	if(strpos($filepath,'http://') !== false) {
+	if(strpos($filepath,'http://') !== false || strpos($filepath,'https://') !== false) {
 		echo "<style>
         		      #header {height: 200px; }
         		      #audio-panel { height: 100px; width:670px; }              
