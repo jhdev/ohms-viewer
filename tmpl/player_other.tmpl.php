@@ -12,7 +12,7 @@ echo "<style>
 
 $filepath = $cacheFile->media_url;
 echo '<div class="centered">';
-if($cacheFile->fmt=='audio' || $cacheFile->fmt=='audiotrans') {
+if($cacheFile->clip_format=='audio' || $cacheFile->clip_format=='audiotrans') {
 	if(strpos($filepath,'http://') !== false || strpos($filepath,'https://') !== false) {
 		echo "<style>
         		      #header {height: 200px; }
